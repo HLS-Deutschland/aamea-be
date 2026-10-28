@@ -1,276 +1,277 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AAMEA — What We Stand For</title>
-<meta name="description" content="African Advisors for Mining & Energy Association (AAMEA) — international non-profit association (AISBL) in formation, Brussels.">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AAMEA — How we work</title>
+<meta name="description" content="AAMEA, the trusted connector for Africa's industrialisation, starting with mining and energy. Belgian association (AISBL) in registration, Brussels.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans:wght@400;600&family=IBM+Plex+Serif:wght@400;600&display=swap">
 <style>
-  :root{
-    --bg:#191919;
-    --bg-alt:#212121;
-    --gold:#e9db7d;
-    --gold-dim:#c9ab3f;
-    --text:#e9e7e1;
-    --text-muted:#a8a6a0;
-    --border:#333230;
-    --card:#252423;
-  }
-  *{box-sizing:border-box;margin:0;padding:0;}
-  body{
-    background:var(--bg);
-    color:var(--text);
-    font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;
-    line-height:1.65;
-  }
-  h1,h2{
-    font-family:'Playfair Display',serif;
-    font-weight:600;
-    color:var(--gold);
-  }
-  section{
-    max-width:1080px;
-    margin:0 auto;
-    padding:88px 32px;
-  }
-  .hero{
-    max-width:none;
-    min-height:92vh;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    padding:64px 32px;
-    border-bottom:1px solid var(--border);
-  }
-  .hero-inner{max-width:1080px;margin:0 auto;width:100%;}
-  .tag{
-    display:inline-block;
-    background:var(--gold-dim);
-    color:#1a1704;
-    font-weight:600;
-    font-size:13px;
-    letter-spacing:.04em;
-    padding:6px 14px;
-    border-radius:3px;
-    margin-bottom:28px;
-  }
-  h1{font-size:clamp(2.4rem,5vw,3.6rem);line-height:1.15;margin-bottom:24px;}
-  .lede{font-size:1.1rem;color:var(--text-muted);max-width:640px;}
-  .lede strong{color:var(--text);font-weight:600;}
-  h2{font-size:clamp(1.6rem,3vw,2.2rem);margin-bottom:36px;}
-  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:24px;}
-  .grid4{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
-  @media(max-width:720px){.grid2,.grid4{grid-template-columns:1fr;}}
-  .card{
-    background:var(--card);
-    border:1px solid var(--border);
-    border-radius:6px;
-    padding:28px;
-  }
-  .card.highlight{background:var(--gold);color:#1a1704;border:none;}
-  .card.highlight h3{color:#1a1704;}
-  .card h3{font-size:1.05rem;font-weight:600;margin-bottom:10px;}
-  .card p{color:var(--text-muted);font-size:.95rem;}
-  .card.highlight p{color:#3a3208;}
-  .callout{
-    margin-top:24px;
-    background:var(--gold-dim);
-    color:#1a1704;
-    border-radius:6px;
-    padding:22px 28px;
-    font-size:1rem;
-  }
-  .callout strong{font-weight:600;}
-  .lede-intro{color:var(--text-muted);margin-bottom:40px;max-width:720px;}
-  .steps{
-    display:flex;
-    flex-wrap:wrap;
-    gap:20px;
-    counter-reset:step;
-  }
-  .step{
-    flex:1 1 180px;
-    border-top:2px solid var(--gold);
-    padding-top:16px;
-  }
-  .step .n{color:var(--gold);font-family:'Playfair Display',serif;font-size:1.3rem;}
-  .step h3{font-size:1rem;font-weight:600;margin:6px 0 8px;}
-  .step p{color:var(--text-muted);font-size:.9rem;}
-  .compare{display:grid;grid-template-columns:1fr 1fr;gap:24px;}
-  @media(max-width:720px){.compare{grid-template-columns:1fr;}}
-  .compare .col{background:var(--card);border:1px solid var(--border);border-radius:6px;padding:28px;}
-  .compare h3{color:var(--text);font-size:1.05rem;margin-bottom:14px;}
-  .compare.strength h3{color:var(--gold);}
-  .compare ul{list-style:none;color:var(--text-muted);font-size:.95rem;}
-  .compare li{padding:6px 0;border-bottom:1px solid var(--border);}
-  .compare li:last-child{border-bottom:none;}
-  .quote{
-    border-left:3px solid var(--gold);
-    padding-left:24px;
-    font-size:1.2rem;
-    color:var(--text);
-    margin-top:32px;
-  }
-  .quote strong{color:var(--gold);}
-  footer{
-    border-top:1px solid var(--border);
-    padding:48px 32px;
-    text-align:center;
-    color:var(--text-muted);
-    font-size:.85rem;
-  }
-  footer .domains{margin-top:8px;}
-  .stealth-banner{
-    max-width:1080px;
-    margin:28px auto 0;
-    padding:14px 20px;
-    border:1px solid var(--gold-dim);
-    border-radius:6px;
-    color:var(--text);
-    font-size:.95rem;
-    text-align:center;
-  }
-  .stealth-banner a{color:var(--gold);text-decoration:none;}
-  .stealth-banner a:hover{text-decoration:underline;}
+/* Tokens: AAMEA Design Guide v1.1. Gold only ever runs vertically; horizontal lines use --line. */
+:root{
+  --navy:#0D1B2A; --gold:#C9A84C; --gold-ink:#7A5E1A; --paper:#FFFFFF; --paper-2:#F2EFE9;
+  --band:#0D1B2A; --on-band:#F2EFE9; --ink:#1A2533; --ink-muted:#5B6573; --line:#D9D2C3;
+  --serif:"IBM Plex Serif",Georgia,"Times New Roman",serif;
+  --sans:"IBM Plex Sans",Arial,Helvetica,sans-serif;
+  --mono:"IBM Plex Mono",Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--gold-ink:#D9BC6A;--paper:#0D1B2A;--paper-2:#16283D;--band:#0D1B2A;--ink:#F2EFE9;--ink-muted:#A9B3BF;--line:#2C415A}
+}
+:root[data-theme="dark"]{--gold-ink:#D9BC6A;--paper:#0D1B2A;--paper-2:#16283D;--band:#0D1B2A;--ink:#F2EFE9;--ink-muted:#A9B3BF;--line:#2C415A}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:14px/21px var(--sans);-webkit-text-size-adjust:100%}
+/* page edge: 2px gold hairline outermost, 8px navy bar beside it, full height */
+body{border-left:2px solid var(--gold);box-shadow:inset 8px 0 0 var(--navy)}
+.wrap{max-width:960px;margin:0 auto;padding:0 24px 0 32px}
+a{color:var(--gold-ink);text-underline-offset:3px}
+a:focus-visible,summary:focus-visible{outline:2px solid var(--gold-ink);outline-offset:3px}
+.eyebrow{font:600 11px/14px var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--gold-ink)}
+.meta{font:400 11px/14px var(--mono)}
+
+/* header band */
+header.band{background:var(--band);color:var(--on-band);padding:32px 0 48px}
+header.band .eyebrow{color:var(--gold)}
+.topline{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:flex-start}
+.topline .meta{color:var(--on-band);opacity:.85;text-align:right}
+h1{font:600 44px/48px var(--serif);margin:16px 0 16px;color:var(--gold);letter-spacing:.02em}
+.lead{font:400 17px/25px var(--serif);max-width:34em;margin:0}
+nav{margin-top:32px;display:flex;gap:24px;flex-wrap:wrap}
+nav a{color:var(--on-band);font-weight:600;text-decoration:none;padding:4px 0;border-bottom:0}
+nav a:hover{color:var(--gold)}
+
+/* key message */
+.key{background:var(--band);color:var(--on-band);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.key .wrap{padding-top:24px;padding-bottom:24px}
+.key p{margin:0;font:600 20px/26px var(--serif);border-left:2px solid var(--gold);padding-left:16px;max-width:30em}
+.key span{color:var(--gold)}
+
+section{padding:48px 0 0}
+h2{font:600 20px/26px var(--serif);margin:0 0 24px;border-left:2px solid var(--gold);padding-left:12px}
+h2.title{font-size:30px;line-height:36px}
+p{margin:0 0 16px;max-width:40em}
+.small{font-size:12px;line-height:17px;color:var(--ink-muted)}
+.statements{display:grid;gap:12px;grid-template-columns:repeat(3,1fr);margin:0;padding:0;list-style:none}
+.statements li{background:var(--paper-2);border-left:4px solid var(--gold);padding:16px;font:400 17px/25px var(--serif)}
+
+.tiles{display:grid;gap:12px;grid-template-columns:repeat(3,1fr)}
+.tile{border:1px solid var(--line);padding:16px}
+.tile b{display:block;font:600 26px/30px var(--serif);color:var(--gold-ink);margin-bottom:8px}
+.tile span{color:var(--ink-muted)}
+
+.grid2{display:grid;gap:12px;grid-template-columns:repeat(2,1fr)}
+.panel{background:var(--paper-2);border-left:4px solid var(--gold);padding:16px}
+.panel h3{font:600 14px/20px var(--sans);margin:0 0 8px}
+.panel p{margin:0}
+.principles{margin:0;padding:0;list-style:none;display:grid;gap:12px}
+.principles li{border-left:2px solid var(--gold);padding-left:12px}
+.principles b{font-weight:600}
+.ready{margin-top:24px}
+
+/* annex */
+details{border:1px solid var(--line);margin:0 0 12px}
+summary{cursor:pointer;padding:12px 16px;font:600 14px/20px var(--sans);list-style:none;background:var(--paper-2)}
+summary::-webkit-details-marker{display:none}
+summary::before{content:"+";display:inline-block;width:20px;color:var(--gold-ink);font-weight:600}
+details[open] summary::before{content:"–"}
+details .in{padding:16px}
+details .in p{max-width:none}
+.reading{background:var(--paper-2);border-left:4px solid var(--gold);padding:12px 16px;margin:16px 0 0}
+dl{margin:0}
+dt{font:600 11px/14px var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--gold-ink);margin-top:12px}
+dd{margin:2px 0 0}
+ol.ing{margin:0;padding-left:24px}
+ol.ing li::marker{color:var(--gold-ink);font-weight:600}
+
+footer{margin-top:64px;border-top:1px solid var(--line);padding:24px 0 48px;color:var(--ink-muted);font-size:12px;line-height:17px}
+footer .row{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+footer p{max-width:none;margin:0 0 8px}
+
+@media (max-width:760px){
+  .wrap{padding:0 16px 0 24px}
+  h1{font-size:36px;line-height:40px}
+  .statements,.tiles,.grid2{grid-template-columns:1fr}
+  .topline .meta{text-align:left}
+}
+@media print{body{box-shadow:inset 8px 0 0 var(--navy)} details{break-inside:avoid} details:not([open]) .in{display:block}}
 </style>
 </head>
 <body>
 
-<div class="hero">
-  <div class="hero-inner">
-    <span class="tag">FOUNDING PHASE &middot; BRUSSELS</span>
-    <h1>AAMEA — What We Stand For</h1>
-    <p class="lede"><strong>African Advisors for Mining &amp; Energy Association (AAMEA)</strong> | International non-profit association (AISBL), in formation</p>
+<header class="band">
+  <div class="wrap">
+    <div class="topline">
+      <span class="eyebrow">African Advisors for Mining and Energy Association</span>
+    </div>
+    <h1>AAMEA</h1>
+    <p class="lead">The trusted connector for Africa's industrialisation, starting with mining and energy.</p>
+    <nav aria-label="Page sections">
+      <a href="#gap">The gap</a>
+      <a href="#evidence">How we work</a>
+      <a href="#brings">What AAMEA brings</a>
+      <a href="#annex">Examples</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </div>
-  <div class="stealth-banner">AAMEA is in its founding phase as an international non-profit association (AISBL) in Brussels. To get in touch, reach us at <a href="mailto:info@aamea.be">info@aamea.be</a>.</div>
-</div>
+</header>
 
-<section>
-  <h2>The Real Constraint Is Not What You Think</h2>
+<div class="key"><div class="wrap"><p>This is a build, not a quick deal. <span>Partners who join now shape it.</span></p></div></div>
+
+<main class="wrap">
+
+<section id="gap">
+  <h2 class="title">Africa's resources need a trusted connector, not another report</h2>
+  <ul class="statements">
+    <li>Geology and demand are there. What is missing is a partner every side trusts.</li>
+    <li>Whoever fills that gap becomes the entry point to the sector.</li>
+    <li>The strongest positions in African resources were built over years, not won in one deal.</li>
+  </ul>
+</section>
+
+<section id="evidence">
+  <h2>How we work</h2>
+  <ul class="principles">
+    <li><b>Ready before the opening.</b> We build capability first and announce later.</li>
+    <li><b>The state owns the outcome.</b> We supply what the state lacks.</li>
+    <li><b>Finance, logistics and market access, together.</b> Each alone is replaceable.</li>
+    <li><b>Institutions, not individuals.</b> We build relationships that survive a change of leadership.</li>
+  </ul>
+</section>
+
+<section id="brings">
+  <h2>What AAMEA brings</h2>
   <div class="grid2">
-    <div class="card highlight">
-      <h3>The Misconception</h3>
-      <p>Africa's minerals opportunity is still being approached as an extraction problem. It isn't. The constraint is not geology, demand, or capital.</p>
+    <div class="panel"><h3>For governments</h3><p>Trust of industry and of partner governments when a project crosses borders. A credible counterpart on both sides of the table.</p></div>
+    <div class="panel"><h3>For industry</h3><p>Trust in a reliable government counterpart and predictable permitting, and that opportunities are spotted and communicated early.</p></div>
+    <div class="panel"><h3>For financiers</h3><p>Trust in the projects we recommend, and the ability to close gaps on the way to readiness.</p></div>
+    <div class="panel"><h3>For partners</h3><p>Trust in a curated circle of international companies and governments, with access to deals and the option to co-invest as the platform matures.</p></div>
+  </div>
+
+  <h2 style="margin-top:48px">What this makes possible</h2>
+  <div class="grid2">
+    <div class="panel"><p>Governments sell and process more of their own resources.</p></div>
+    <div class="panel"><p>Projects reach financing on clearer terms.</p></div>
+    <div class="panel"><p>Capital finds one trusted entry point instead of many unreliable ones.</p></div>
+    <div class="panel"><p><b>Partners who join early help shape how it works.</b></p></div>
+  </div>
+</section>
+
+<section id="annex">
+  <p class="eyebrow">Annex · Examples from the field</p>
+  <h2 class="title">Examples: how positions in African resources were built</h2>
+  <p>Public cases from African resources. They are not AAMEA projects and not a forecast of AAMEA's results; they show the patterns AAMEA builds on. Figures are from public reporting; sources at the end.</p>
+
+  <details>
+    <summary>A · Gécamines and Mercuria: a state starts selling its own metal (Congo)</summary>
+    <div class="in">
+      <p><b>2024:</b> Congo sells part of its share of joint-venture copper for the first time. The September 2024 Tenke tender is reported to go half to Mercuria, the rest to Glencore and Trafigura. Mercuria hires Kostas Bintas, formerly co-head of metals at Trafigura, to build a metals desk. It was already marketing some Gécamines copper before the formal venture.</p>
+      <p><b>December 2025:</b> Gécamines and Mercuria launch a joint venture to market copper, cobalt and other critical minerals. Gécamines controls it; Mercuria provides finance, logistics and technical support. The US–DRC strategic partnership is signed in the same period.</p>
+      <p><b>12 January 2026:</b> Gécamines exercises its right to buy 100,000 t of Tenke Fungurume's 2026 copper (about 20%, equal to its stake) for sale to the United States.</p>
+      <p><b>February 2026:</b> marketing rights to part of Glencore's KCC output. Leadership of Gécamines changes on 23 February.</p>
+      <p><b>19 October 2026:</b> Kipushi zinc concentrate offtake of up to 240,000 t over two years.</p>
+      <div class="reading"><b>Reading:</b> a state moved from collecting dividends to selling metal, because a partner had spent two years building capacity first. The leadership change shows why relationships must rest on institutions.</div>
     </div>
-    <div class="card">
-      <h3>The Actual Constraint</h3>
-      <p>The absence of institutional and commercial operating systems that convert ore into repeatable projects, predictable revenues, domestic industry, and negotiating power.</p>
+  </details>
+
+  <details>
+    <summary>B · Lobito Corridor: logistics that shape a region (Angola; links to Congo and Zambia)</summary>
+    <div class="in">
+      <p><b>Scope:</b> the concession covers the Benguela railway in Angola, from the port of Lobito to the Congolese border. The line continues in Congo; Zambia's connection is financed separately (African Development Bank).</p>
+      <p><b>2022:</b> Angola awards a 30-year concession to Trafigura, Mota-Engil and Vecturis, over a Chinese bidder: upfront fee, new locomotives and wagons, freight target of 1.67 million t a year by year five.</p>
+      <p><b>December 2025:</b> the US Development Finance Corporation signs a loan of up to US$553 million; financial close reported for mid-2026.</p>
+      <div class="reading"><b>Reading:</b> whoever moves the cargo shapes the corridor; trading, logistics and finance reinforce each other, and government-backed capital follows.</div>
     </div>
-  </div>
-</section>
+  </details>
 
-<section style="background:var(--bg-alt);max-width:none;">
-  <div style="max-width:1080px;margin:0 auto;">
-    <h2>Where Value Is Captured</h2>
-    <p class="lede-intro">Across countries and commodities, the pattern is consistent. Value is captured where the chain is engineered.</p>
-    <div class="grid4">
-      <div class="card"><h3>Permitting Certainty</h3><p>Reliable regulatory pathways that reduce project risk</p></div>
-      <div class="card"><h3>Processing Readiness</h3><p>In-country capacity to add value before export</p></div>
-      <div class="card"><h3>Traceability</h3><p>Auditable supply chains that unlock premium buyers</p></div>
-      <div class="card"><h3>Bankable Offtake</h3><p>Investor-grade agreements that secure stable finance</p></div>
+  <details>
+    <summary>C · Kamoa-Kakula: capital, technology and the state, each at the right moment (Congo)</summary>
+    <div class="in">
+      <p><b>2015:</b> Zijin buys 49.5% of the Kamoa holding company for US$412 million, paid in instalments. <b>2016:</b> partnership with the Congolese government, which holds 20%.</p>
+      <p><b>2018:</b> CITIC Metal becomes Ivanhoe's largest shareholder, described by Ivanhoe as the result of a 15-year relationship. <b>2021:</b> first concentrate scheduled at Kakula.</p>
+      <div class="reading"><b>Reading:</b> long relationships come before the contract; each partner enters at a defined moment.</div>
     </div>
-    <div class="callout">When midstream systems are weak, mines become isolated projects exposed to price volatility. When strong, mining becomes an <strong>industrial platform</strong>.</div>
-  </div>
-</section>
+  </details>
 
-<section>
-  <h2>What AAMEA Is</h2>
-  <div class="grid4">
-    <div class="card"><h3>Advisor</h3><p>Practical guidance to governments and industry partners on building investable mining environments</p></div>
-    <div class="card"><h3>Think Tank</h3><p>Rigorous analysis of the commercial and institutional systems that determine where value is retained</p></div>
-    <div class="card"><h3>Active Driver</h3><p>Direct engagement in commercial projects — not strategy documents, but execution frameworks</p></div>
-  </div>
-</section>
-
-<section style="background:var(--bg-alt);max-width:none;">
-  <div style="max-width:1080px;margin:0 auto;">
-    <h2>The Mandate: Build the Decision Environment</h2>
-    <p class="lede-intro">AAMEA's mandate is practical: help governments and serious industry partners build the "decision environment" that makes mining investable and scalable.</p>
-    <div class="grid4">
-      <div class="card"><h3>Digitised Records</h3><p>Structured, machine-readable data that governments can act on at transaction speed</p></div>
-      <div class="card"><h3>Auditable Workflows</h3><p>Compliance-grade processes that reduce disputes and prove sovereignty</p></div>
-      <div class="card"><h3>Corridor Readiness Packs</h3><p>Infrastructure-aligned documentation for priority investment corridors</p></div>
-      <div class="card"><h3>Negotiation-Grade Forecasting</h3><p>Predictive tools so ministries negotiate from precision, not reaction</p></div>
+  <details>
+    <summary>D · Two further examples</summary>
+    <div class="in">
+      <p><b>Orion Critical Mineral Consortium</b> (US government finance and Abu Dhabi's ADQ; US$1.8 billion, October 2025): in February 2026 a non-binding memorandum on a possible 40% stake in Glencore's Mutanda and KCC interests.</p>
+      <p><b>Africa Finance Corporation</b> (founded 2007 by African states, rated A): a mandate from member states and neutrality are assets that accumulate slowly.</p>
     </div>
-  </div>
-</section>
+  </details>
 
-<section>
-  <h2>The 100-Day Approach</h2>
-  <p class="lede-intro">AAMEA's 100-day approach begins with digitisation and governance — not as a critique, but as a capacity uplift — so governments can see what they control, prove compliance, reduce disputes, and present coherent "state offers" for priority corridors and value-chain investments.</p>
-  <div class="steps">
-    <div class="step"><div class="n">01</div><h3>Digitisation</h3><p>Capacity uplift to see what you control</p></div>
-    <div class="step"><div class="n">02</div><h3>Governance</h3><p>Establish rules and clear oversight</p></div>
-    <div class="step"><div class="n">03</div><h3>Compliance</h3><p>Reduce disputes and prove compliance</p></div>
-    <div class="step"><div class="n">04</div><h3>Commercial</h3><p>Align infrastructure and processing</p></div>
-    <div class="step"><div class="n">05</div><h3>Investor-Ready</h3><p>Create bankable offers and docs</p></div>
-  </div>
-</section>
-
-<section style="background:var(--bg-alt);max-width:none;">
-  <div style="max-width:1080px;margin:0 auto;">
-    <h2>The Core Lever: Capability</h2>
-    <p class="lede-intro">Turning fragmented information into state negotiating strength.</p>
-    <div class="compare">
-      <div class="col">
-        <h3>From Fragmentation</h3>
-        <ul>
-          <li>Scattered, unverifiable records</li>
-          <li>Reactive negotiating posture</li>
-          <li>Disputed compliance claims</li>
-          <li>Opaque project pipelines</li>
-        </ul>
-      </div>
-      <div class="col strength">
-        <h3>To State Strength</h3>
-        <ul>
-          <li>Coherent "state offers" for corridors</li>
-          <li>Precision-based negotiation</li>
-          <li>Auditable, provable compliance</li>
-          <li>Bankable investment pipelines</li>
-        </ul>
-      </div>
+  <details>
+    <summary>E · Seven ingredients of a connector position, drawn from these examples</summary>
+    <div class="in">
+      <ol class="ing">
+        <li>Capability before the opening</li>
+        <li>A state counterparty that owns the outcome</li>
+        <li>A political window, read early</li>
+        <li>Finance, logistics and market access combined</li>
+        <li>People with a record on the other side of the table</li>
+        <li>Patient capital, staged commitments</li>
+        <li>Resilience to change at the counterparty</li>
+      </ol>
+      <p style="margin-top:16px">In every case above the position took years to build; the largest results came after a decade or more of relationships.</p>
     </div>
+  </details>
+
+  <h2 style="margin-top:48px">What AAMEA brings, and why</h2>
+  <p>Statements on AAMEA's own offer. Each states its status plainly: design and offer, not a record of completed work.</p>
+
+  <details>
+    <summary>F1 · For governments: a credible counterpart on both sides of the table</summary>
+    <div class="in"><dl>
+      <dt>Mechanism</dt><dd>AAMEA is African-led and holds a neutral position between governments, industry and capital. For a ministry it combines predictive targeting of higher-probability zones, a single view of land, rights and protected areas, two to four joint policy sessions a year with investor feedback, and energy-linked project structuring. Its flagship programme places an expert team inside a ministry for 100 days to work on permitting, GIS, environmental-assessment systems and digital transparency.</dd>
+      <dt>Why trust</dt><dd>Industry meets a government that has been through a structured reform and is pre-briefed; the government meets investors who have been prepared. A partner government can state in a letter that it works with AAMEA, which signals to others that projects will move.</dd>
+      <dt>Status</dt><dd>Offer and design. Delivery is not claimed here.</dd>
+    </dl></div>
+  </details>
+  <details>
+    <summary>F2 · For industry: predictable permitting, early sight of opportunities</summary>
+    <div class="in"><dl>
+      <dt>Mechanism</dt><dd>Digital permitting and one-stop approvals are the stated aims of the 100-Day programme, with a target of faster approvals. Predictive analytics rank areas by likelihood of success, so opportunities are identified before they are tendered, and the policy sessions let industry feed into rule changes.</dd>
+      <dt>Status</dt><dd>Targets and design. Permitting outcomes depend on the government concerned.</dd>
+    </dl></div>
+  </details>
+  <details>
+    <summary>F3 · For financiers: projects that reach you on a common scale</summary>
+    <div class="in"><dl>
+      <dt>Mechanism</dt><dd>AAMEA assesses project documents on one scale: twelve dimensions on a five-level maturity ladder, six knockout criteria and four decision bands (Reject, Park, Develop, Advance). Gaps found are made visible, and AAMEA works with the sponsor to close them before a project is put forward.</dd>
+      <dt>Limits</dt><dd>AAMEA recommends on its own judgement; it is not a guarantee, and the financier decides.</dd>
+    </dl></div>
+  </details>
+  <details>
+    <summary>F4 · For partners: a curated circle, with access that grows as the platform does</summary>
+    <div class="in"><dl>
+      <dt>Mechanism</dt><dd>AAMEA builds a curated circle of international companies and governments around its work. Access to deals and co-investment grows as the platform matures.</dd>
+      <dt>Status</dt><dd>Offer. Deals and co-investment are options, not promises.</dd>
+    </dl></div>
+  </details>
+
+  <p class="small" style="margin-top:24px"><b>Sources:</b> Mercuria and Gécamines announcements (January 2026); Mining Weekly (Tenke tender 2024; Gécamines trading division, February 2026); Global Mining Review (December 2025); Miningmx (Glencore KCC marketing rights, February 2026); Trafigura press release on the Lobito concession (2023); US DFC announcement on the Lobito Atlantic Railway; Ivanhoe Mines releases on Zijin and CITIC; Mining Weekly and Mining Technology on Orion CMC; Africa Finance Corporation public information.</p>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <div class="panel">
+    <p><b>AAMEA</b> is in its founding phase as a Belgian association (AISBL) in registration, Brussels.<br>
+    To get in touch: <a href="mailto:info@aamea.be">info@aamea.be</a></p>
   </div>
 </section>
 
-<section>
-  <h2>The Commercial Layer</h2>
-  <p class="lede-intro">Beyond governance, AAMEA advances the full commercial stack that converts policy ambition into bankable pipelines.</p>
-  <div class="grid4">
-    <div class="card"><h3>Processing Pathways</h3><p>In-country beneficiation routes that retain margin and build domestic skills</p></div>
-    <div class="card"><h3>Infrastructure Alignment</h3><p>Coordinated power, water, rail, and port readiness for corridor investment</p></div>
-    <div class="card"><h3>Traceability Architecture</h3><p>Standards-compliant delivery systems that unlock premium buyers and stable finance</p></div>
-    <div class="card"><h3>Investor-Ready Documentation</h3><p>Bankable project packs that translate government ambition into financeable transactions</p></div>
-  </div>
-</section>
-
-<section style="background:var(--bg-alt);max-width:none;">
-  <div style="max-width:1080px;margin:0 auto;">
-    <h2>An Industrial Strategy, Not a Development Slogan</h2>
-    <div class="grid4">
-      <div class="card"><h3>Formalising Throughput</h3><p>Makes supply bankable — turning informal flows into financeable, verifiable volumes</p></div>
-      <div class="card"><h3>Processing &amp; Logistics</h3><p>Retains margin and builds skills — keeping more value inside the jurisdiction</p></div>
-      <div class="card"><h3>Traceability &amp; Standards</h3><p>Unlocks premium buyers and stable, long-term finance from responsible investors</p></div>
-      <div class="card"><h3>Predictive Forecasting</h3><p>Governments stop negotiating reactively and start negotiating from precision</p></div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <h2>The Goal: Make African Mining Repeatable</h2>
-  <p class="lede">Not as isolated extraction — but as <strong>value-chain infrastructure</strong>. The future belongs to jurisdictions that can deliver reliable, compliant material at scale — and can prove it with systems.</p>
-  <p class="quote">Minerals are not the prize. The prize is <strong>the value chain</strong> — and the state capacity to run it.</p>
-</section>
+</main>
 
 <footer>
-  African Advisors for Mining &amp; Energy Association (AAMEA) — International non-profit association (AISBL) in formation, Brussels
-  <div class="domains">Responsible for content: Gerhard Geschwinder, Co-founder &middot; <a href="mailto:info@aamea.be" style="color:inherit;">info@aamea.be</a></div>
-  <div class="domains">aamea.be &middot; aamea.org &middot; aamea.africa &middot; aamea.ngo</div>
+  <div class="wrap">
+    <div class="row"><span>AAMEA · info@aamea.be</span><span>How we work</span></div>
+    <p style="margin-top:12px">African Advisors for Mining and Energy Association (AAMEA) — AISBL i.G. · Brussels, Belgium. Belgian association, registration in process.</p>
+    <p>Responsible for content: Gerhard Geschwinder, Co-founder · <a href="mailto:info@aamea.be">info@aamea.be</a>. <em>[Legal notice / imprint to be added before publication.]</em></p>
+    <p>aamea.be · aamea.org · aamea.africa · aamea.ngo</p>
+  </div>
 </footer>
-
 </body>
 </html>
